@@ -6,22 +6,30 @@ programa
 
 		inteiro num
 		
-		escreva("Digite um número: \n")
+		escreva("Digite um número: ")
 		leia(num)
 
 
 
 		se(num % 2 == 0){
-			escreva ("esse número é par\n")
+			escreva("--------------------------------------\n")
+			escreva ("Esse número é par\n")
+			
 		
 		}
 		senao{
-			escreva ("esse número é impar\n")
+			escreva("--------------------------------------\n")
+			escreva ("Esse número é impar\n")
+			
 		}
 		se(num > 0){
-			escreva ("esse número é positivo")
+			
+			escreva ("Esse número é positivo\n")
+			escreva("--------------------------------------\n")
 		}senao {
-			escreva ("esse numero é negativo")
+			
+			escreva ("Esse número é negativo\n")
+			escreva("--------------------------------------\n")
 		}
 		
 	}
@@ -31,7 +39,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 217; 
+ * @POSICAO-CURSOR = 211; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

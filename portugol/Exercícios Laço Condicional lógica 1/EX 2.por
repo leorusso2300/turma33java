@@ -8,10 +8,10 @@ programa
 		real salario, salarioExtra, salarioTotal
 		
 	
-		escreva("Digite o código do trabalhador: \n")
+		escreva("Digite o código do trabalhador: ")
 		leia (c)
 
-		escreva("Digite o número de horas trabalhadas: \n")
+		escreva("Digite o número de horas trabalhadas: ")
 		leia (n)
 
 		
@@ -21,14 +21,17 @@ programa
 		salarioExtra = 20.00 * horaExcedente
 		salarioTotal = salario + salarioExtra
 
-		escreva("Funcionario: " + c + "\n Horas excedentes: " + horaExcedente + "\n Salário extra R$: " + salarioExtra + "\n Salário total R$: " + salarioTotal)  
-		
+		escreva("--------------------------------------\n")
+		escreva("Funcionário: " + c + "\nHoras excedentes: " + horaExcedente + "\nSalário extra R$: " + salarioExtra + "\nSalário total R$: " + salarioTotal + "\n")  
+		escreva("--------------------------------------\n")
 		
 		}
 		senao{
 
 		salario = (n * 10.00)
-		escreva("Funcionario: " + c + "\n Salário total R$:" + salario)
+		escreva("--------------------------------------\n")
+		escreva("Funcionário: " + c + "\nSalário total R$:" + salario + "\n")
+		escreva("--------------------------------------\n")
 		
 			
 		}
@@ -43,7 +46,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 347; 
+ * @POSICAO-CURSOR = 590; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
