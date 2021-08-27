@@ -40,10 +40,8 @@ programa
 	escreva("----------------------------------------------------------------\n")
 	escreva("A média do salário dos moradores é de: " + mediaSalario + "R$\n")
 	escreva("A média de filhos dos moradores é de: " + mediaFilhos)
-	escreva("\nO número total de filhos é:" + totalFilhos)
 	escreva("\nO maior salário é de:" + maiorSalario + "R$\n")
 	escreva("O percentual de salários maiores que 100% é de: " + percSalario + "%\n")
-	escreva("O total dos salário dos moradores é de :" + totalSalario)
 	escreva("\n----------------------------------------------------------------")
 	
 	}
@@ -54,7 +52,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 994; 
+ * @POSICAO-CURSOR = 1122; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
