@@ -4,31 +4,40 @@ programa
 	funcao inicio()
 	{
 
+		inteiro mat[3][3],l,c
+		inteiro total = 0, totalDia = 0 
 		
-		inteiro pontuacao[6]
-		inteiro maiorPontuacao = 0
-		inteiro total[6]
-			
-		para(inteiro x = 1 ; x <= 5 ; x++){
 
-			escreva("Digite o valor da pontuação " + x + ":")
-			leia(pontuacao[x])
 
-			se(pontuacao[x] > maiorPontuacao){
+		para(l = 0; l <3 ; l++){
+			para(c = 0; c<3;c++){
+				leia(mat[l][c])
 
-				maiorPontuacao = pontuacao[x]				
-							
+
+				total = total + mat[l][c]
+
+				se(l == c){
+				totalDia += mat[l][c]
+				}								
 			}
+		}
 
+		
+		para(l = 0; l <3 ; l++){
+			para(c = 0; c<3;c++){
 			
-			
-			
+
+
+				escreva(mat[l][c] + "\n")							
+			}
 		}
 		
-		para(inteiro x = 1 ; x<=5 ; x++){
-			escreva(pontuacao[x] + " ")
-		}
-		escreva("\nA maior pontuação é : " + maiorPontuacao)
+
+		escreva("---------------------------------------\n")
+		escreva("O total de números é de: " + total + "\n")
+		escreva("A soma dos números na diagonal é de: " + totalDia)
+		escreva("\n---------------------------------------")
+								
 				
 	}
 }
@@ -37,9 +46,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 426; 
+ * @POSICAO-CURSOR = 564; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {mat, 7, 10, 3};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
