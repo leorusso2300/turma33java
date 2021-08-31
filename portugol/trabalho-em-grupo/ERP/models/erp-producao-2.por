@@ -35,8 +35,6 @@ programa{
 		caracter valor, s = 's', n = 'n'
 		real total = 0.0, totalFinal = 0.0
 		caracter desejaComprar = 'x', continuarCompra = 'x'// opcaoPgto= 'x'
-		real valorTotal = 0.0, valorNota = 0.0, valorParcela, valorCompra = 0.0
-		inteiro formaPagamento
 		//********************************************************
 
 	funcao inicio(){
@@ -119,22 +117,19 @@ programa{
 			erp()
 	}//@AQUI ACABA A FUNÇÃO MAIN
 
-
-	funcao erp() {
-
-
+			//FUNÇÃO PRINCIPAL
+			funcao erp() {
 			
 			enquanto (desejaComprar != 'S' e desejaComprar != 's' e desejaComprar != 'N' e desejaComprar != 'n'){
 				leia(desejaComprar)
 				limpa()
-				
 			
 				executarOperacao()
-			
-			}
+
+			}//@AQUI ACABA O SEGUNDO PARA
 
 					
-		}//@AQUI TERMINA A FUNCAO ERP
+		}//@AQUI ACABA O PRIMEIRO PARA
 
 
 	funcao executarOperacao() {
@@ -154,8 +149,7 @@ programa{
 				}
 		      	 escreva("\n") 
 			}
-				
-				
+		
 				escreva("\n")
 				//Selecionar o produto
 				
@@ -165,7 +159,6 @@ programa{
 				leia(codigoEscolhido)
 
 			//***************** SELECIONE O CÓDIGO DO PRODUTO *******************
-
 			para(x=0; x<10; ++x){
 				se(codigoEscolhido == codigoProduto[x]){
 
@@ -189,11 +182,7 @@ programa{
 							}
 
 						}
-
-						
-						
 						totalFinal = total+totalFinal
-						escreva(totalFinal)
 						
 						escreva("\n\n\n")
 						escreva("\tCONTINUAR A COMPRANDO? S/N : ")
@@ -218,14 +207,14 @@ programa{
 							executarOperacao()
 						} senao {
 							escreva("\n AQUI ENTRA A FUNÇÃO FINALIZAR COMPRA ! \n\n")
-							finalizarCompra()
 						}
 							
 					}//@AQUI ACABA O SEGUNDO > SE
 					senao se (qtaAdicionadoCarrinho[x] > estoqueProduto[x]) {
 						limpa()
 						escreva("\n\n Indisponível essa quantidade..\n\n")
-						pare
+						
+						executarOperacao()
 					}
 					senao se (carrinho[x]!=" ") {
 						limpa()
@@ -249,59 +238,10 @@ programa{
 						
 				}
 			}
-
-			
 	}
 
-		funcao finalizarCompra(){
-			formaPagamentoFun()
 
-			
-						carrinho[x]=codigoProduto[x]+"\t"+nomeProduto[x]+"R$ "+(valorProduto[x]*qtaAdicionadoCarrinho[x])+"\t   "+qtaAdicionadoCarrinho[x]+"\n"
-						
-						para(inteiro c=0; c<10; c++){
-							se(carrinho[c] != " "){
-								escreva (carrinho[c])
-								total = valorProduto[x]*qtaAdicionadoCarrinho[x]
-							}
-			
-		}
-		}
 
-		funcao formaPagamentoFun(){
-			escreva("Selecione a forma de pagamento?\n")
-			escreva("\n1 - DEBITO \n2 - CREDITO \n3 - PARCELADO (2X)")
-			escreva("\nPagamento: ")
-			leia(formaPagamento)
-			limpa()
-
-			se(formaPagamento ==1) {
-			valorCompra = totalFinal * (10.00/100.00)
-			valorTotal = totalFinal - valorCompra
-			valorNota = valorTotal * (9.00/100.00)
-			escreva("O valor total da compra é de: R$ " ,valorTotal, " (Desconto 10%)	")
-		
-		
-	
-			} senao se(formaPagamento ==2){
-			valorCompra = totalFinal * (10.00/100.00)
-			valorTotal = totalFinal + valorCompra
-			valorNota = valorTotal * (9.00/100.00)
-			escreva("O valor total da compra é de: R$ " ,valorTotal, " (Acréscimo 10%)")
-	
-			} senao se(formaPagamento ==3){
-			valorCompra = totalFinal * (15.00/100.00)
-			valorTotal = totalFinal + valorCompra
-			valorNota = valorTotal * (9.00/100.00)
-			
-
-			valorParcela = valorTotal / 2
-			escreva("O valor total da compra é de: R$ " ,valorTotal)
-			escreva("\nA conta totalizou 2 parcelas de: R$ " ,valorParcela)
-
-			}
-			escreva("\nO imposto é de: " ,valorNota, " (9%) ")
-		}//aqui acaba a funcao pagamento
 
 
 
@@ -342,8 +282,6 @@ programa{
 				escreva("\t\t\t■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n")
 			}
 
-
-			
  
 }
 /* $$$ Portugol Studio $$$ 
@@ -351,9 +289,9 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 8525; 
+ * @POSICAO-CURSOR = 4285; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {carrinho, 19, 9, 8}-{valorProduto, 27, 10, 12}-{totalFinal, 36, 20, 10};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
