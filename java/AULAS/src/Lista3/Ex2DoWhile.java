@@ -17,16 +17,17 @@ public class Ex2DoWhile {
 			if (numero % 3 == 0) {
 
 				multTres = multTres + numero;
-				soma = soma + 1;				
+				soma = soma + 1;
+
+				if (numero == 0) {
+					media = (multTres / (soma - 1));
+				}
 			}
 
-		} while (numero != 0);
+		} while (numero > 0);
 
-		media = (multTres / (soma - 1));
-		System.out.print(soma);
 		System.out.print("A média dos números multiplos de 3 é: " + media);
 		leitor.close();
-
 	}
 
 }
