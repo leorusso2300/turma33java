@@ -7,7 +7,7 @@ public class FormaPagamento {
 		Scanner leitor = new Scanner(System.in);
 
 		double valorTotal, valorNota = 0.0, valorParcela, valorCompra = 0.0, valorPagamento = 150.00;
-		int formaPagamento;
+		int formaPagamento, emitirNota = 0, fim = 0;
 
 		System.out.println("Selecione a forma de pagamento?");
 		System.out.println("\n1 - DÉBITO \n2 - CRÉDITO \n3 - PARCELADO (2X)");
@@ -41,6 +41,35 @@ public class FormaPagamento {
 		}
 		System.out.printf("\nO imposto é de R$%.2f:", valorNota);
 		System.out.println(" (9%)");
+		
+		
+		System.out.print("Deseja imitir nota? 1-SIM 2-NÃO");
+		emitirNota = leitor.nextInt();
+		
+		if(emitirNota == 1) {
+			
+			//System.out.print("\n\n");
+			//System.out.print("CARRINHO\n\n");
+			//System.out.print ("COD\t  Produto \t   Valor\t    Qnt\n");
+			//carrinho[x]= codigoProduto[x]+"\t"+nomeProduto[x]+"R$ "+(valorProduto[x]*qtaAdicionadoCarrinho[x])+"\t   "+qtaAdicionadoCarrinho[x]+"\n"
+			//System.out.printf("Subtotal: R$ "+ totalFinal +"\t\t Valor da nota: R$ "+valorTotal);
+			
+			//for(int c=0; c<10; c++){
+				//if(carrinho[c] != " "){
+					//System.out.print (carrinho[c]);
+					//total = valorProduto[x]*qtaAdicionadoCarrinho[x];
+				////}
+			
+			}
+			System.out.print(valorTotal);
+			//System.out.print ("Subtotal: R$ "+totalFinal+"\t\t Valor da nota: R$ "+ valorTotal;	
+			System.out.print("FINALIZAR COMPRA AGORA? (1) SIM ou (2) NÃO: \n");
+			fim = leitor.nextInt();
+			
+		}
+		
+		
+		
 		leitor.close();
 	}
 
