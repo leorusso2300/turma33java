@@ -1,4 +1,4 @@
-package ExerciciosPOO;
+package classes;
 
 public class Aviao {
 

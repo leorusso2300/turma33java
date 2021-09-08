@@ -1,4 +1,7 @@
-package ExerciciosPOO;
+package aplicacoes;
+
+
+import classes.Aviao;
 
 public class AviaoPrincipal {
 

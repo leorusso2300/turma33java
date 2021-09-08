@@ -1,4 +1,6 @@
-package ExerciciosPOO;
+package aplicacoes;
+
+import classes.Cliente;
 
 public class ClientePrincipal {
 
@@ -12,7 +14,7 @@ public class ClientePrincipal {
 		leonardo.ativoCliente();
 		leonardo.desativarCliente();
 		leonardo.ativoCliente();
-
+		
 	
 
 	}
