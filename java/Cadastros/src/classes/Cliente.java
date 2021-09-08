@@ -3,6 +3,7 @@ package classes;
 public class Cliente {
 
 	public String nome;
+	public int anoNascimento;
 	public boolean ativo = false;
 
 	public void ativarCliente() {
