@@ -1,4 +1,4 @@
-package Ex1classes;
+package Ex1_classes;
 
 public class Animal {
 	

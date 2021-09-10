@@ -2,9 +2,9 @@ package aplicacoes;
 
 import java.util.Scanner;
 
-import Ex1classes.Cachorro;
-import Ex1classes.Cavalo;
-import Ex1classes.Preguica;
+import Ex1_classes.Cachorro;
+import Ex1_classes.Cavalo;
+import Ex1_classes.Preguica;
 
 public class Principal {
 	
