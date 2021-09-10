@@ -6,14 +6,17 @@ public class ContaEmpresa extends Conta{
 		private	double	emprestimoEmpresa;
 	
 	// constructor
-		public ContaEmpresa(int numero, String cpf, Double saldo) {
-			super(numero, cpf, saldo);
+		public ContaEmpresa(int numero, String cpf, double emprestimoEmpresa) {
+			super(numero, cpf);
+			this.emprestimoEmpresa = emprestimoEmpresa;
 		}
 		
 	// encapsulation
 		public double getEmprestimoEmpresa() {
 			return emprestimoEmpresa;
 		}
+
+		
 
 		public void setEmprestimoEmpresa(double emprestimoEmpresa) {
 			this.emprestimoEmpresa = emprestimoEmpresa;
@@ -22,9 +25,9 @@ public class ContaEmpresa extends Conta{
 	// methods
 		public void pedirEmprestimo(double emprestimo)
 		{
-			this.saldo += emprestimo;
+			super.credito(emprestimo);
 			this.emprestimoEmpresa -= emprestimo;
-			
+			System.out.println("Saldo atual emprestimo R$ "+this.emprestimoEmpresa);
 		}
 	
 }
