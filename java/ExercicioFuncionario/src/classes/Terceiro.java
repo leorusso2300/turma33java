@@ -1,14 +1,13 @@
 package classes;
 
-public class Terceiro extends Funcionario {
+public class Terceiro extends Funcionario{
+
+	public Terceiro(String matricula, int horasTrabalhadas) {
+		super(matricula, horasTrabalhadas);
 
 	
-	@Override
-	public double salario() {
-
-		return ((horasTrabalhadas * valorHora) + adicional);
-
 	}
+	
 	
 
 }

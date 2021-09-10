@@ -1,4 +1,4 @@
-package classes;
+package Ex2classes;
 
 public class Cachorro  extends Animal
 {
