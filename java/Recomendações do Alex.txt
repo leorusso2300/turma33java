@@ -1,8 +1,0 @@
-Recomendações sobre organização de tarefas no projeto:
-- Utilizar o conceito de "Unica fonte da verdade", por exemplo: Utilziar a branch "main" do GIT como uma versão "canonica",
-ou seja, uma versão que é sempre a versão final, que funciona, e todos  tem certeza que funciona e é a versão final.
-
-- Ao invés de cada um fazer uma parte da aplicação para juntar depois, é mais produtivo juntarem-se para fazerem juntos a parte de cada um.
-
-Recomendacoes de coisas pra fazer pra TRANSCENDER no java
-- Aprenda a escrever um programa no bloco de notas e compilar e rodar pelo terminal

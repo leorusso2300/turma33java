@@ -11,13 +11,33 @@ public class DAL {
 		this.produtosDisponiveis = new ArrayList<Product>();
 		this.carrinho = new Carrinho();
 
-		Product ps5 = new Product("1", "Tênis Nike", 5000, 3);
-		Product mac = new Product("2", "Tênis Adidas", 32000, 5);
-		Product pcGamer = new Product("3", "PC Gamer Pichau Que Não Funciona", 2700, 6);
+		Product TenisNike = new Product("G2-1", "Tênis Nike", 200, 10);
+		Product TenisAdidas = new Product("G2-2", "Tênis Adidas", 150, 10);
+		Product TenisPuma = new Product("G2-3", "Tênis Puma", 100, 10);
+		Product CamisaNike = new Product("G2-4", "Camisa Nike", 50, 10);
+		Product CamisaLacoste = new Product("G2-5", "Camisa Lacoste", 500, 10);
+		Product CamisaSupreme = new Product("G2-6", "Camisa Supreme", 1000, 10);
+		Product MeiaNike = new Product("G2-7", "Meia Nike", 30, 10);
+		Product MeiaAdidas = new Product("G2-8", "Meia Adidas", 25, 10);
+		Product BolaFutebol = new Product("G2-9", "Bola Futebol", 40, 10);
+		Product BlusaMoletonNike = new Product("G2-10", "Blusa Moleton Nike", 120, 10);
 
-		this.produtosDisponiveis.add(ps5);
-		this.produtosDisponiveis.add(mac);
-		this.produtosDisponiveis.add(pcGamer);
+
+		
+
+
+		this.produtosDisponiveis.add(TenisNike);
+		this.produtosDisponiveis.add(TenisAdidas);
+		this.produtosDisponiveis.add(TenisPuma);
+		this.produtosDisponiveis.add(CamisaNike);
+		this.produtosDisponiveis.add(CamisaLacoste);
+		this.produtosDisponiveis.add(CamisaSupreme);
+		this.produtosDisponiveis.add(MeiaNike);
+		this.produtosDisponiveis.add(MeiaAdidas);
+		this.produtosDisponiveis.add(BolaFutebol);
+		this.produtosDisponiveis.add(BlusaMoletonNike);
+
+
 	}
 
 	public List<Product> getProdutosDisponiveis() {
