@@ -1,11 +1,15 @@
-package ecommerce;
 
 public class ItemCarrinho {
+	
 	private Product produto;
 	private int quantidade;
 	
 	public ItemCarrinho(Product produto, int quantidade) {
 		this.produto = produto;
+		this.quantidade = quantidade;
+	}
+	
+	public ItemCarrinho(int quantidade) {
 		this.quantidade = quantidade;
 	}
 	

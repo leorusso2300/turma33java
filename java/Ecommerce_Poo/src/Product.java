@@ -1,6 +1,6 @@
-package ecommerce;
 
 public class Product {
+	
 	private String id;
 	private String nome;
 	private int preco;
@@ -11,6 +11,10 @@ public class Product {
 		this.nome = nome;
 		this.preco = preco;
 		this.estoque = estoque;
+	}
+	
+	public int getEstoque(){
+		return this.estoque;
 	}
 	
 	public String getId() {
@@ -36,4 +40,7 @@ public class Product {
 	public void setPreco(int preco) {
 		this.preco = preco;
 	}
+	
+
+
 }

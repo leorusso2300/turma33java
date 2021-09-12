@@ -1,10 +1,9 @@
-package ecommerce;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Carrinho {
 	private List<ItemCarrinho> itens;
+	
 	private int total;
 	private String modoPagamento;
 	private String desconto;
@@ -20,8 +19,14 @@ public class Carrinho {
 		itens.add(item);
 	}
 	
+	public void addItem(int quantidade) {
+		ItemCarrinho item = new ItemCarrinho(quantidade);
+		itens.add(item);
+	}
+	
+	
 	public void listaProdutos() {
-		System.out.println("Produtos no carrinho:");
+		System.out.println("Produtos no carrinho: \n");
 		System.out.format(formatter, "ID", "NOME", "PRECO", "QUANTIDADE");
 		System.out.println();
 		for (ItemCarrinho item : this.itens) {

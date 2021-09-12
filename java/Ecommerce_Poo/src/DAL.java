@@ -1,9 +1,8 @@
-package ecommerce;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class DAL {
+	
 	private List<Product> produtosDisponiveis;
 	private Carrinho carrinho;
 
@@ -22,10 +21,6 @@ public class DAL {
 		Product BolaFutebol = new Product("G2-9", "Bola Futebol", 40, 10);
 		Product BlusaMoletonNike = new Product("G2-10", "Blusa Moleton Nike", 120, 10);
 
-
-		
-
-
 		this.produtosDisponiveis.add(TenisNike);
 		this.produtosDisponiveis.add(TenisAdidas);
 		this.produtosDisponiveis.add(TenisPuma);
@@ -36,8 +31,6 @@ public class DAL {
 		this.produtosDisponiveis.add(MeiaAdidas);
 		this.produtosDisponiveis.add(BolaFutebol);
 		this.produtosDisponiveis.add(BlusaMoletonNike);
-
-
 	}
 
 	public List<Product> getProdutosDisponiveis() {
@@ -46,13 +39,18 @@ public class DAL {
 
 	public void addProductCarrinho(String id, int quantidade) {
 		Product product = this.findProductById(id);
-		this.carrinho.addItem(product, quantidade);
+		if(quantidade <10) {
+			this.carrinho.addItem(product, quantidade);	
+		}else {
+			System.out.println("Quantidade insuficiente!");
+		}
+			
 	}
+	
 
 	private Product findProductById(String id) {
-
 		for (Product product : this.getProdutosDisponiveis()) {
-			if (product.getId().equals(id)) {
+			if (product.getId().equalsIgnoreCase(id)) {
 				return product;
 			}
 		}
@@ -61,16 +59,20 @@ public class DAL {
 	
 	public void exibeProdutosDisponiveis() {
 		System.out.println("=== Produtos Disponíveis ===");
-		helpers.mostraProdutos(this.produtosDisponiveis);
+		Helpers.mostraProdutos(this.produtosDisponiveis);
 	}
 	
 	public void exibeProdutosCarrinho() {
 		this.carrinho.listaProdutos();
+		
 	}
 	
 	public void previewProduto(String id) {
+		
 		Product produto = this.findProductById(id);
-		helpers.mostraUmProduto(produto);
+		Helpers.mostraUmProduto(produto);
 	}
-}
+	
+	
 
+}
