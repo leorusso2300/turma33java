@@ -1,22 +1,27 @@
+package models;
 
 public class ItemCarrinho {
-	
-	private Product produto;
+	//Atributos
+	private Produto produto;
 	private int quantidade;
 	
-	public ItemCarrinho(Product produto, int quantidade) {
+	//Construtores
+	public ItemCarrinho(Produto produto, int quantidade) {
+		super();
 		this.produto = produto;
 		this.quantidade = quantidade;
 	}
 	
-	public ItemCarrinho(int quantidade) {
+	public ItemCarrinho(int quantidade){
+		super();
 		this.quantidade = quantidade;
 	}
 	
-	public Product getProduto() {
+	//Getters and Setters
+	public Produto getProduto() {
 		return produto;
 	}
-	public void setProduto(Product produto) {
+	public void setProduto(Produto produto) {
 		this.produto = produto;
 	}
 	public int getQuantidade() {
@@ -25,4 +30,7 @@ public class ItemCarrinho {
 	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
 	}
+	
+	
+
 }
