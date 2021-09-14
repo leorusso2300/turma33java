@@ -1,16 +1,19 @@
-package models;
+package Ecommerce;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Carrinho {
+	static ERP util = new ERP();
 	//Lista de Items no carrinho
 	private List<ItemCarrinho> itens;
-	
+	private Produto produto;
 	//Atributos
 	private double valorCompra;
 	private int total;
 	private String modoPagamento;
+	
 	//Formatação
 	static String formatter = "%-4s %-40s %-8s %-4s";
 	
@@ -44,7 +47,8 @@ public class Carrinho {
 		}
 	}
 	
-	public void nota(){
+	public void nota( int quantidade, String id){
+   
 		System.out.println("\n\n\n");
 		System.out.println("\n\t\t==== NOTA FISCAL DO CONSUMIDOR ====\n");
 		System.out.format(formatter, "ID", "NOME", "PRECO", "QUANTIDADE");
@@ -53,10 +57,12 @@ public class Carrinho {
 		for (ItemCarrinho item : this.itens) {
 			this.mostraItem(item);
 			
+		
 		}
+		
 	}
 	
-	//Método que mostra items adicionados
+	//Método que mostra items adicionado
 	private void mostraItem(ItemCarrinho item) {
 		Produto produto = item.getProduto();
 		String id = produto.getId();
