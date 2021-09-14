@@ -1,4 +1,4 @@
-package Ecommerce;
+package models;
 
 public class ItemCarrinho {
 	//Atributos
