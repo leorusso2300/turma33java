@@ -1,5 +1,5 @@
-create database db_rh
-use db_rh
+create database db_rh;
+use db_rh;
 
 create table tb_funcionarios(
 id bigint(5) auto_increment,	
@@ -11,7 +11,7 @@ salario real,
 primary key (id)
 );
 
-select * from tb_funcionarios
+select * from tb_funcionarios;
 insert into tb_funcionarios(nome,idade,filhos,turno,salario) Values ("Leonardo",  22 ,false,"Manhã",5000);
 insert into tb_funcionarios(nome,idade,filhos,turno,salario) Values ("Ana", 44 ,true,"Manhã",4000);
 insert into tb_funcionarios(nome,idade,filhos,turno,salario) Values ("Fátima", 68 ,true,"Tarde",1000);
@@ -23,8 +23,5 @@ select * from tb_funcionarios where salario > 2000
 select * from tb_funcionarios where salario < 2000
 
 
-update tb_funcinarios set Nome = "Alexandre" where id = 5;
+update tb_funcionarios set Nome = "Guilherme" where id = 5
 select * from tb_funcionarios
-
-
-

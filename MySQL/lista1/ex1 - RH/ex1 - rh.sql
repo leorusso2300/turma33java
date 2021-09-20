@@ -23,7 +23,5 @@ select * from tb_funcionarios where salario > 2000
 select * from tb_funcionarios where salario < 2000
 
 
-update tb_funcinarios set Nome = "Alexandre" where id = 5;
+update tb_funcionarios set Nome = "Guilherme" where id = 5
 select * from tb_funcionarios
-
-

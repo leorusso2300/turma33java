@@ -27,5 +27,5 @@ select * from tb_produtos where valor > 500
 select * from tb_produtos where valor < 500
 
 update tb_produtos set Nome = "Lacoste", valor = 200 where id = 2;
-
+select * from tb_produtos
 
