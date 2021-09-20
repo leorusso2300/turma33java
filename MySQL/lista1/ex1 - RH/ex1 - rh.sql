@@ -4,24 +4,24 @@ use db_rh;
 create table tb_funcionarios(
 id bigint(5) auto_increment,	
 Nome varchar (20) not null,
-idade int,
-filhos boolean,
-turno varchar (20) not null,
-salario real,
+Idade int,
+Filhos boolean,
+Turno varchar (20) not null,
+Salário decimal(15,3),
 primary key (id)
 );
 
 select * from tb_funcionarios;
-insert into tb_funcionarios(nome,idade,filhos,turno,salario) Values ("Leonardo",  22 ,false,"Manhã",5000);
-insert into tb_funcionarios(nome,idade,filhos,turno,salario) Values ("Ana", 44 ,true,"Manhã",4000);
-insert into tb_funcionarios(nome,idade,filhos,turno,salario) Values ("Fátima", 68 ,true,"Tarde",1000);
-insert into tb_funcionarios(nome,idade,filhos,turno,salario) Values ("Júlia", 18,false,"Noite",800);
-insert into tb_funcionarios(nome,idade,filhos,turno,salario) Values ("Alexandra", 45,true,"Manhã",700);
+insert into tb_funcionarios(nome,idade,filhos,turno,salário) Values ("Leonardo",  22 ,false,"Manhã",5.000);
+insert into tb_funcionarios(nome,idade,filhos,turno,salário) Values ("Ana", 44 ,true,"Manhã",4.000);
+insert into tb_funcionarios(nome,idade,filhos,turno,salário) Values ("Fátima", 68 ,true,"Tarde",1.000);
+insert into tb_funcionarios(nome,idade,filhos,turno,salário) Values ("Júlia", 18,false,"Noite",1.500);
+insert into tb_funcionarios(nome,idade,filhos,turno,salário) Values ("Alexandra", 45,true,"Manhã",2.000);
 select * from tb_funcionarios
 
-select * from tb_funcionarios where salario > 2000
-select * from tb_funcionarios where salario < 2000
+select * from tb_funcionarios where salário >= 2.000
+select * from tb_funcionarios where salário < 2.000
 
 
-update tb_funcionarios set Nome = "Guilherme" where id = 5
+update tb_funcionarios set Nome = "Guilherme", salário = 1.200 where id = 5
 select * from tb_funcionarios
