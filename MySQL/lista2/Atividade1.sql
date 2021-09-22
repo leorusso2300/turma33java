@@ -40,7 +40,7 @@ foreign key (fk_id_classe) references tb_classes(id)
 insert into  tb_personagens (nome, genero, raça, ataque, vida, fk_id_classe) 
 values ("Gustavo","ele", "Jacaré", 20, 150, 1);
 insert into  tb_personagens (nome, genero, raça, ataque, vida, fk_id_classe) 
-values ("Joice","ela", "humana", 20, 150, 3);
+values ("Ana","ela", "humana", 20, 150, 3);
 insert into  tb_personagens (nome, genero, raça, ataque, vida, fk_id_classe) 
 values ("Juan","elu", "bullywug", 8, 50, 4);
 insert into tb_personagens (nome, genero,raça, ataque,vida, fk_id_classe)
