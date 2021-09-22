@@ -2,6 +2,13 @@ package lista3_lacos_de_repeticao;
 
 import java.util.Scanner;
 
+/* Uma empresa desenvolveu uma pesquisa para saber as características psicológicas dos indivíduos 
+de uma região. Para tanto, a cada uma das pessoas era perguntado:
+idade, sexo (1-feminino / 2-masculino / 3-Outros), e as opções (1, se a pessoa era calma;
+2, se a pessoa era nervosa e 3, se a pessoa era agressiva). Pede-se para elaborar um sistema
+que permita ler os dados de 150 pessoas, calcule e mostre: (WHILE)
+*/
+
 public class ex4 {
 
 	public static void main(String[] args) {
@@ -50,7 +57,7 @@ public class ex4 {
 			}
 
 		}
-		
+
 		System.out.println("O número de pessoas calmas é: " + pessoasCalmas);
 		System.out.println("O número de mulheres nervosas é: " + mulheresNervosas);
 		System.out.println("O número de homens agressivos é: " + homensAgressivos);
@@ -59,9 +66,6 @@ public class ex4 {
 		System.out.println("O número de pessoas calmas com menos de 18 é: " + pessoaDezoito);
 		System.out.println("\n-----------------------------------------------");
 		read.close();
-		
-		
-
 
 	}
 }
