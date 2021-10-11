@@ -1,5 +1,4 @@
-INSERT INTO `blog_pessoal`.`postagem` (`date`,`titulo`,`texto`)
- values ('2021-03-26 10:10:10.000','Spring', 'isso');
+Insert INTO `db_lojagames`.`tb_categoria` (`tipo_de_consoles`,`tipo_de_jogos`,`descricao`)
+ values ('ijrijgirjgi','God of War', 'Jogo muito fijrifjrijg');
  
- 
- select * from blog_pessoal.postagem
+select * from db_lojagames.tb_categoria
