@@ -1,1 +1,1 @@
-# turma33java
+Exercicios de lógica de programação java e portugol
